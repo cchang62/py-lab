@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#082081",
+        "titleBar.activeBackground": "#0B2DB5",
+        "titleBar.activeForeground": "#FAFBFF"
+    },
+    "jupyter.jupyterServerType": "local"
+}
