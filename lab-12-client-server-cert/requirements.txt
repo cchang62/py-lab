@@ -1,0 +1,7 @@
+anyio==3.2.1
+certifi==2020.12.5
+Flask==2.0.1
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
+requests @ file:///tmp/build/80754af9/requests_1608241421344/work
+Werkzeug==2.0.1
+wsproto==1.0.0
