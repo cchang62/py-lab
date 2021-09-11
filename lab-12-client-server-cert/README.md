@@ -54,7 +54,7 @@ openssl pkcs12 -export -out 1-demo-client.p12 -inkey 1-demo-client.key -in 1-dem
 ## Run service
 
 ```sh
-
+python server/cert-validation.py
 ```
 
 ## Client test
@@ -73,8 +73,8 @@ curl --cert-type P12 --cert cert/1-demo-client.p12 --cacert cert/demo-server.crt
 
 ## Ref.
 
-1. [Create client and server certs](https://dev.twsiyuan.com/2016/01/self-sign-certificate.html
-2. [Simple Flask with cert](https://medium.com/@charming_rust_oyster_221/)flask-%E9%85%8D%E7%BD%AE-https-%E7%B6%B2%E7%AB%99-ssl-%E5%AE%89%E5%85%A8%E8%AA%8D%E8%AD%89-36dfeb609fa8)
+1. [Create client and server certs](https://dev.twsiyuan.com/2016/01/self-sign-certificate.html)
+2. [Simple Flask with cert](https://medium.com/@charming_rust_oyster_221/flask-%E9%85%8D%E7%BD%AE-https-%E7%B6%B2%E7%AB%99-ssl-%E5%AE%89%E5%85%A8%E8%AA%8D%E8%AD%89-36dfeb609fa8)
 3. [Simple Python client with cert](https://stackoverflow.com/questions/17576324/python-requests-ssl-error-for-client-side-cert)
 4. [cURL with cacert and cert -0](https://smallstep.com/hello-mtls/doc/client/curl)
 5. [cURL with cacert and cert -1 ](https://stackoverflow.com/questions/32253909/curl-with-a-pkcs12-certificate-in-a-bash-script)
