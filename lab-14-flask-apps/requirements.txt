@@ -1,0 +1,5 @@
+certifi==2016.9.26
+flask
+gunicorn
+gevent
+greenlet
