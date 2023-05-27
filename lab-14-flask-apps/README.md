@@ -13,11 +13,17 @@ gunicorn  -c ./app_2/gunicorn_config.py  main:app --chdir ./app_2
 ### Build Image
 
 ```sh
-docker build -t flask_apps -f Dockerfile .
+docker build -t flask-apps -f Dockerfile .
 ```
 
 ### Run Container Locally
 
 ```sh
-docker run -p 8080:8080 --name flask-apps --rm flask-apps
+docker run -p 8080:8080 --name flask-apps --rm -d flask-apps
+
+docker log -f flask-apps
+
+docker stop flask-apps
 ```
+
+

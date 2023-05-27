@@ -1,5 +1,12 @@
 certifi==2016.9.26
-flask
-gunicorn
+flask==1.1.4
+flask-Cors==3.0.10
+flask-restplus==0.13.0
+flask-swagger-ui==4.11.1
 gevent
 greenlet
+gunicorn==20.1.0
+importlib-metadata==4.8.3
+jinja2==2.11.3
+jsonschema==3.2.0
+Werkzeug==0.16.1

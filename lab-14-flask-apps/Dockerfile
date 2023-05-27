@@ -8,6 +8,8 @@ COPY ./nginx/flask_apps.conf /etc/nginx/conf.d/default.conf
 # link nginx logs to container stdout
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
+# ENV REQUESTS_CA_BUNDLE="/YYY/xxx.pem"
+
 # copy the django code
 COPY . ./app
 
@@ -24,7 +26,7 @@ RUN python -m venv /opt/venv && \
 EXPOSE 8080/tcp
 
 # make our entrypoint.sh executable
-RUN chmod +x config/entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 # execute our entrypoint.sh file
-CMD ["./config/entrypoint.sh"]
+CMD ["./entrypoint.sh"]
